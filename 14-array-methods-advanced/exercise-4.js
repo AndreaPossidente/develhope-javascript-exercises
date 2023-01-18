@@ -3,7 +3,7 @@ function uncompletedNotes(notes) {
   notes.forEach((note) => {
     filteredNotes.push({
       ...note,
-      todos: note.todos.filter((todo) => todo.done === true),
+      todos: note.todos.filter((todo) => todo.done === false),
     });
   });
   console.log(filteredNotes);
